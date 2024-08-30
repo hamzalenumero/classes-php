@@ -1,0 +1,124 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    background-color: rgb(187, 19, 159);
+    color: white;
+    height: calc(100dvh - 55px);
+}
+
+
+
+
+
+/* FORMULAIRE */
+
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #1e1c1c;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0347ac;
+}
+
+/* Styles pour le prénom et le nom côte à côte */
+.name-container {
+    display: flex;
+    gap: 20px;
+}
+
+.name-field {
+    flex: 1;
+}
+
+.name-field label {
+    margin-bottom: 5px;
+}
+
+.name-field input[type="text"] {
+    width: 100%;
+}
+
+
+
+
+
+h1 {
+    color: #333333;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.text-center {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.text-center a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.text-center a[href*="inscription"] {
+    background-color: #4CAF50; /* Vert */
+    color: white;
+    border: 2px solid #45a049;
+}
+
+.text-center a[href*="inscription"]:hover {
+    background-color: #45a049;
+    box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+}
+
+.text-center a[href*="connexion"] {
+    background-color: #2196F3; /* Bleu */
+    color: white;
+    border: 2px solid #1e87db;
+}
+
+.text-center a[href*="connexion"]:hover {
+    background-color: #1e87db;
+    box-shadow: 0 4px 8px rgba(33, 150, 243, 0.3);
+}
